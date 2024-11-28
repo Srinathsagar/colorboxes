@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+/* Box Styling */
+.box {
+  width: 50px;
+  height: 50px;
+}
+
+/* Corner Boxes */
+.corner {
+  position: absolute;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  background-color: blue;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  background-color: red;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  background-color: orange;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  background-color: yellow;
+}
+
+/* Central Left Grid */
+.left-grid {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(2, 50px);
+  grid-template-rows: repeat(2, 50px);
+  gap: 10px;
+}
+
+.left-grid .pink {
+  background-color: pink;
+}
+
+.left-grid .red {
+  background-color: red;
+}
+
+.left-grid .lightblue {
+  background-color: lightblue;
+}
+
+.left-grid .brown {
+  background-color: brown;
+}
+
+/* Central Right Grid */
+.right-grid {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translate(50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(2, 50px);
+  grid-template-rows: repeat(2, 50px);
+  gap: 10px;
+}
+
+.right-grid .magenta {
+  background-color: magenta;
+}
+
+.right-grid .orange {
+  background-color: orange;
+}
+
+.right-grid .yellow {
+  background-color: yellow;
+}
+
+.right-grid .navy {
+  background-color: navy;
+}
